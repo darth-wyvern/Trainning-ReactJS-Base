@@ -16,7 +16,7 @@ export default function ArchitectureComponent() {
   }
 
   return (
-    <Box p='1rem'>
+    <Box p='20px 1rem'>
       <Heading>Architecture Component</Heading>
       <Box p='1rem'>
         <Text>References 1:
@@ -27,10 +27,12 @@ export default function ArchitectureComponent() {
           <Link color='blue.600' href='https://medium0.com/@vaqifagayev/react-component-architecture-design-8f5528c8254c'> React Component Architecture Design</Link>
         </Text>
 
-        <Flex gap={1} mt='1rem'>
+        <Box gap={1} mt='1rem'>
           <Text fontWeight='bold' fontStyle='italic'>note:</Text>
           <Text fontStyle='italic'>You can see I was copied a lot from a website, don't worry I've read them. I got more experience about architecture component in react and my skill english</Text>
-        </Flex>
+          <Text fontStyle='italic'>I may not be entirely sure of what I have read. Can you give me some advice to secure my knowledge.</Text>
+          <Text>Thank you!</Text>
+        </Box>
       </Box>
 
       <Card m={4} boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.2);'>
