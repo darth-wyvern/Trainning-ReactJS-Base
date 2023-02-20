@@ -1,11 +1,12 @@
 import './App.css';
-import React from 'react';
+import React, { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Dashboard from './page/Dashboard';
-import Rendering from './page/Rendering';
-import Layout from './page/Layout';
-import Content from './page/Content';
-import Architecture from './page/Architecture';
+
+const Dashboard = lazy(() => import('./page/Dashboard'));
+const Layout = lazy(() => import('./page/Layout'));
+const Content = lazy(() => import('./page/Content'));
+const Architecture = lazy(() => import('./page/Architecture'));
+const Rendering = lazy(() => import('./page/Rendering'));
 
 function App() {
   return (
