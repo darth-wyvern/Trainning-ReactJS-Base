@@ -24,7 +24,15 @@ export default function Hook() {
                       returns an array containing the current state and a function to update the state. You can also
                       pass an initial state value to useState.
                     </Text>
-                    <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
+                    <Box
+                      bgColor="#000"
+                      color="white"
+                      p="1rem"
+                      mt="1rem"
+                      flex={1}
+                      overflow="auto"
+                      mb=".5rem"
+                      w="fix-content">
                       <pre
                         style={{
                           whiteSpace: 'pre-wrap',
@@ -41,7 +49,7 @@ function MyComponent() {
   return (
     <div>
       <p>Count: {count}</p>
-      <button onClick={incrementCount}>Increment</button>
+      <button onClick={incrementCount} >Increment</button>
     </div>
   );
 }
@@ -68,7 +76,7 @@ function MyComponent() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://api.example.com/data')
+    fetch(' https://api.example.com/data ')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
