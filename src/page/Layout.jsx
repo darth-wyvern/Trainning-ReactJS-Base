@@ -14,6 +14,7 @@ export default function Layout() {
     { path: '/style', component: 'Style' },
     { path: '/hook', component: 'Hook' },
     { path: '/redux', component: 'Redux' },
+    { path: '/method-http', component: 'Method HTTP' },
     { path: '/server-rendering', component: 'Server rendering' }
   ];
 
