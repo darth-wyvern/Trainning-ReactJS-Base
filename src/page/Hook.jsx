@@ -25,7 +25,11 @@ export default function Hook() {
                       pass an initial state value to useState.
                     </Text>
                     <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                      <pre>{`import React, { useState } from 'react';
+                      <pre
+                        style={{
+                          whiteSpace: 'pre-wrap',
+                          wordWrap: 'break-word'
+                        }}>{`import React, { useState } from 'react';
 
 function MyComponent() {
   const [count, setCount] = useState(0);
@@ -54,7 +58,11 @@ function MyComponent() {
                       when certain values have changed.
                     </Text>
                     <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                      <pre>{`import React, { useState, useEffect } from 'react';
+                      <pre
+                        style={{
+                          whiteSpace: 'pre-wrap',
+                          wordWrap: 'break-word'
+                        }}>{`import React, { useState, useEffect } from 'react';
 
 function MyComponent() {
   const [data, setData] = useState(null);
@@ -78,7 +86,11 @@ function MyComponent() {
                       components. It takes a context object as input and returns the current context value.
                     </Text>
                     <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                      <pre>{`import React, { useContext } from 'react';
+                      <pre
+                        style={{
+                          whiteSpace: 'pre-wrap',
+                          wordWrap: 'break-word'
+                        }}>{`import React, { useContext } from 'react';
 import MyContext from './MyContext';
 
 function MyComponent() {

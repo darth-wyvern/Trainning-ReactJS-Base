@@ -21,7 +21,11 @@ export default function Style() {
                     prop of the component.
                   </Text>
                   <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                    <pre>{`function MyComponent() {
+                    <pre
+                      style={{
+                        whiteSpace: 'pre-wrap',
+                        wordWrap: 'break-word'
+                      }}>{`function MyComponent() {
   const styles = {
     backgroundColor: 'red',
     color: 'white',
@@ -43,7 +47,11 @@ export default function Style() {
                     class names.
                   </Text>
                   <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                    <pre>{`import styles from './MyComponent.module.css';
+                    <pre
+                      style={{
+                        whiteSpace: 'pre-wrap',
+                        wordWrap: 'break-word'
+                      }}>{`import styles from './MyComponent.module.css';
 
 function MyComponent() {
   return <div className={styles.myClass}>Hello World!</div>;
@@ -60,7 +68,11 @@ function MyComponent() {
                     reusable styled components that can be used throughout your application.
                   </Text>
                   <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                    <pre>{`import styled from 'styled-components';
+                    <pre
+                      style={{
+                        whiteSpace: 'pre-wrap',
+                        wordWrap: 'break-word'
+                      }}>{`import styled from 'styled-components';
 
 const MyComponent = styled.div'
   background-color: red;

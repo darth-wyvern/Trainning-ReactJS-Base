@@ -23,7 +23,11 @@ export default function State() {
             <Flex flexDir="column">
               <Text>Here&apos;s an example of using the useState hook to manage state in a React component:</Text>
               <Box bgColor="#000" color="white" p="1rem" mt="1rem" overflow="auto">
-                <pre>{`import React, { useState } from 'react';
+                <pre
+                  style={{
+                    whiteSpace: 'pre-wrap',
+                    wordWrap: 'break-word'
+                  }}>{`import React, { useState } from 'react';
 
 function Counter() {
   const [count, setCount] = useState(0);

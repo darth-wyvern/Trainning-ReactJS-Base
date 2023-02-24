@@ -16,7 +16,11 @@ export default function Props() {
             <Flex flexDir="column">
               Here&apos;s an example of using props to pass data from a parent component to a child component:
               <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto">
-                <pre>{`// Parent Component
+                <pre
+                  style={{
+                    whiteSpace: 'pre-wrap',
+                    wordWrap: 'break-word'
+                  }}>{`// Parent Component
 import React from 'react';
 import ChildComponent from './ChildComponent';
 

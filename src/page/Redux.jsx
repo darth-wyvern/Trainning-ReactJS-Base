@@ -32,7 +32,11 @@ export default function Redux() {
                       a specific part of the state.
                     </Text>
                     <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                      <pre>{`import { createStore, combineReducers } from 'redux';
+                      <pre
+                        style={{
+                          whiteSpace: 'pre-wrap',
+                          wordWrap: 'break-word'
+                        }}>{`import { createStore, combineReducers } from 'redux';
 import counterReducer from './counterReducer';
 import userReducer from './userReducer';
 
@@ -54,7 +58,11 @@ const store = createStore(rootReducer);
                       allows it to dispatch actions to update the state.
                     </Text>
                     <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                      <pre>{`import { connect } from 'react-redux';
+                      <pre
+                        style={{
+                          whiteSpace: 'pre-wrap',
+                          wordWrap: 'break-word'
+                        }}>{`import { connect } from 'react-redux';
 
 function MyComponent({ counter, dispatch }) {
   function incrementCounter() {
@@ -88,7 +96,11 @@ export default connect(mapStateToProps)(MyComponent);
                       and return a new state based on the action.
                     </Text>
                     <Box bgColor="#000" color="white" p="1rem" mt="1rem" flex={1} overflow="auto" mb=".5rem">
-                      <pre>{`// actions.js
+                      <pre
+                        style={{
+                          whiteSpace: 'pre-wrap',
+                          wordWrap: 'break-word'
+                        }}>{`// actions.js
 export const incrementCounter = () => ({
   type: 'INCREMENT_COUNTER'
 });
